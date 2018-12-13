@@ -13,6 +13,6 @@ client.on('message', (topic, message) => {
 
 function handleSignal1 (message) {
   context = message.toString();
-  console.log(context)
+  //console.log(context)
   SubsignalController.saveSubsignal('signal1',context);
 }

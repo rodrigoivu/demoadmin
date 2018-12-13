@@ -1,8 +1,8 @@
 var mqtt = require('mqtt');
-var client  = mqtt.connect('mqtt://192.168.0.8');
+var client  = mqtt.connect('mqtt://165.227.26.150');
 client.on('connect', function () {
 	setInterval(function() {
-		client.publish('myTopic', 'Hello mqtt');
-		console.log('Message Sent');
+		client.publish('postsignalplc001', '789/777');
+		//console.log('Message Sent');
 	}, 5000);
 });

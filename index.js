@@ -3,6 +3,7 @@ var mongoose = require('mongoose');
 var app = require('./app');
 var broker = require('./broker');
 var subsignal1 = require('./subsignal1');
+var publisher = require('./publisher');
 var port = process.env.PORT || 3780;
 
 mongoose.Promise = global.Promise;
